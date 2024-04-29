@@ -3,7 +3,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(../../img/fundo.jpg);
+  background-image: url(../img/fundo.jpg);
   z-index: -1;
   opacity: 0.1;
 }
