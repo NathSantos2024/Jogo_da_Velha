@@ -1,0 +1,116 @@
+/* Estilo do banner utilizado como fundo */
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("src/img/fundo.jpg");
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Altura total da tela */
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo do formulário de entrada e placar */
+#name-input,
+#scores {
+  font-family: "Freckle Face", system-ui;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 2;
+}
+
+#start-btn {
+  font-family: "Freckle Face", system-ui;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 20px;
+  transition: transform 0.5s;
+  background-color: #f8a2decc;
+  padding: 10px;
+}
+
+#start-btn:hover {
+  transform: translateY(-10px);
+}
+
+#game-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#game-title {
+  font-family: "Flavors", cursive;
+  font-weight: 400;
+  color: #ee1e97; /* Cor do título */
+  font-size: 150px;
+  margin-top: 50px;
+}
+
+/* Estilo do tabuleiro do jogo */
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px); /* Tamanho das colunas */
+  grid-template-rows: repeat(3, 100px); /* Tamanho das linhas */
+  gap: 60px; /* Espaçamento entre as células */
+  padding: 20px; /* Espaçamento interno */
+
+  justify-content: center;
+}
+
+/* Estilo das células do tabuleiro */
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em; /* Tamanho da fonte das células */
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
+  cursor: pointer;
+  border: 3px dotted #ee1e97; /* Estilização das bordas das células */
+  width: 130px; /* Largura das células */
+  height: 130px; /* Altura das células */
+  background-color: #fffcfcd0;
+}
+
+.cell:hover {
+  background-color: #f8a2decc; /* Cor de fundo ao passar o mouse */
+}
+
+#scores {
+  margin-top: 20px; /* Espaçamento acima dos placares */
+}
+
+/* Estilização dos placares */
+#player-x-score,
+#player-o-score {
+  display: inline-block;
+  margin: 0 30px;
+  font-size: 2em;
+  color: #ee1e97;
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
+}
+
+@keyframes highlight {
+    0% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #ee1e97;
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+  
+  .cell.winning {
+    animation: highlight 1s ease-in-out;
+  }
+  

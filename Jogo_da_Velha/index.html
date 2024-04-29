@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nathalia Santos">
+    <title>Jogo da Velha</title>
+    <!-- Fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Flavors&family=Freckle+Face&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body class="banner">
+    <div id="game-container">
+    <h1 id="game-title">Jogo da Velha</h1>
+    <!-- Formulário para entrada dos nomes dos jogadores -->
+    <div id="name-input">
+        <label for="player1">Nome do Jogador 1 (X):</label>
+        <input type="text" id="player1" required>
+        <br>
+        <label for="player2">Nome do Jogador 2 (O):</label>
+        <input type="text" id="player2" required>
+        <br>
+        <button id="start-btn">Começar o Jogo</button>
+    </div>
+
+    <!-- Tabuleiro do jogo -->
+    <div id="game-board">
+        <!-- Espaços para as células do jogo serão adicionados dinamicamente -->
+    </div>
+
+    <!-- Placar dos jogadores -->
+    <div id="scores" style="display: none;">
+        <span id="player-x-score"></span>
+        <span id="player-o-score"></span>
+    </div>
+
+    <!-- Botão para reiniciar o jogo -->
+    <div id="restart-btn" style="display: none;">
+        <button onclick="restartGame()">Reiniciar Jogo</button>
+    </div>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
+
