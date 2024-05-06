@@ -12,12 +12,13 @@ Bem-vindo ao Jogo da Velha, também conhecido como Jogo do Galo em Potugal! Prep
 
 ## 🎯 Como Jogar
 
-1. Abra o arquivo `index.html` em qualquer navegador da web.
-2. Insira o nome de cada jogador nos campos de entrada.
-3. Clique no botão "Começar o Jogo" para iniciar.
-4. Cada jogador alterna entre os símbolos "X" e "O", clicando nas células vazias do tabuleiro.
-5. O primeiro jogador a formar uma linha, coluna ou diagonal com três símbolos iguais ganha a rodada.
-6. Continue jogando até que os jogadores decidam parar ou fechar a página.
+1. Abra o arquivo `index.html` em qualquer navegador da web ou clique em
+[JOGAR](https://nathsantos2024.github.io/Jogo_da_Velha)
+3. Insira o nome de cada jogador nos campos de entrada.
+4. Clique no botão "Começar o Jogo" para iniciar.
+5. Cada jogador alterna entre os símbolos "X" e "O", clicando nas células vazias do tabuleiro.
+6. O primeiro jogador a formar uma linha, coluna ou diagonal com três símbolos iguais ganha a rodada.
+7. Continue jogando até que os jogadores decidam parar ou fechar a página.
 
 ## 🎨 Screenshots e Animações
 
