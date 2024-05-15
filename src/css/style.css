@@ -114,34 +114,90 @@
   animation: highlight 1s ease-in-out;
 }
 
-@media (max-width: 1024px) {
-  body {
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0, auto;
-  }  
+@media(max-width: 1024px) { 
+  #game-container {
+    margin-bottom: 0;
+}
+
+#game-title {
+  margin: 0;
+}
+}
+
+@media (min-width: 820px) and (max-width: 1020px) { 
+  #game-container {
+    margin-bottom: 40%;
+}
 
   #game-title {
     font-size: 70px;
-    margin-top: 10%;
+    margin-top: 0;
     align-items: center;
   }
+
+  #name-input,
+  #scores {
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #name-input br {
+    display: none; /* Define para não exibir o <br> */
+}
 }
 
-@media (max-width: 425px) {
-  body {
-    max-width: 100%;
-    max-height: 100%;
-  } 
-
+@media (min-width: 601px) and (max-width: 819px) { 
   #game-container {
+    margin-bottom: 15%;
+}
 
+  #game-title {
+    font-size: 80px;
+    margin-top: 0;
+    align-items: center;
   }
+
+  #name-input,
+  #scores {
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #name-input br {
+    display: none; /* Define para não exibir o <br> */
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  align-items: center;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+}
+
+@media (min-width: 376px) and (max-width: 600px) {
+  #game-container {
+    margin-bottom: 30%;
+}
 
   #game-title {
     font-size: 80px;
     margin-top: 20%;
-    align-items: center;
+    margin-bottom: 0;
   }
 
   #name-input,
@@ -152,11 +208,14 @@
     flex-direction: column;
   }
 
+  #name-input br {
+    display: none; /* Define para não exibir o <br> */
+}
+
   #game-board {
     display: grid;
     grid-template-columns: repeat(3, 60px);
     grid-template-rows: repeat(3, 60px);
-    align-items: center;
   }
 
   .cell {
@@ -177,18 +236,21 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 375px) {
+  #game-container {
+    margin-bottom: 30%;
+}
+  
   #game-title {
     font-size: 70px;
-    margin-top: 10px;
-    align-items: center;
+    margin-top: 25%;
+    margin-bottom: 0;
   }
 
   #game-board {
     display: grid;
     grid-template-columns: repeat(3, 20px);
     grid-template-rows: repeat(3, 20px);
-    align-items: center;
   }
 
   .cell {
@@ -214,6 +276,10 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+   }
+   
+   #name-input br {
+      display: none; /* Define para não exibir o <br> */
   }
 
   #start-btn {
@@ -222,17 +288,5 @@
     padding: 8px;
     align-items: center;
   }
-}
-
-@media (max-width: 320px) {
-  #game-title {
-    font-size: 60px;
-  }
-
-  body {
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0, auto;
-  } 
 }
   
