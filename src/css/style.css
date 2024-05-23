@@ -114,24 +114,39 @@
   animation: highlight 1s ease-in-out;
 }
 
-@media(max-width: 1024px) { 
+@media(min-width: 1021px) and (max-width: 1616px) { 
   #game-container {
-    margin-bottom: 0;
+    margin-bottom: 5%;
 }
 
 #game-title {
-  margin: 0;
+  margin-top: 20%;
+  font-size: 80px;
+  margin-bottom: 0;
 }
+
+#name-input,
+#scores {
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#name-input br {
+  display: none; /* Define para não exibir o <br> */
+}
+
 }
 
 @media (min-width: 820px) and (max-width: 1020px) { 
   #game-container {
-    margin-bottom: 40%;
+    margin-bottom: 5%;
 }
 
   #game-title {
-    font-size: 70px;
-    margin-top: 0;
+    font-size: 80px;
+    margin-top: 50PX;
     align-items: center;
   }
 
@@ -289,4 +304,5 @@
     align-items: center;
   }
 }
+
   
